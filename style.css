@@ -1,0 +1,261 @@
+:root{
+     --purple:#512051;
+     --pink:#EE69A4;
+     --light-purple:#F7F2F7;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url(./images/Path.svg),
+  url(./images/Path\ Copy\ 5.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right,top left;
+  background-size: 67%, 36%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section{
+  height: 100vh;
+}
+.head_container {
+  margin: 60px 140px;
+}
+.head_container .left{
+
+  width: 445px;
+  height: 245;
+  margin-right: 125px;
+}
+.head_container .left .heading{
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: -2px;
+  color: var(--purple);
+  margin-bottom: 30px;
+}
+
+.head_container .left .head_text{
+  font-family: 'League Spartan',sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: -0.633333px;
+  color: #927B91;
+}
+.head_container .right .margin{
+  margin-left: 40px;
+}
+.head_container .right .right-content:last-child{
+  margin-left:80px;
+  
+}
+.head_container .right .right-content{
+  display: flex;
+  background: #F7F2F7;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 445px;
+  height: 60px;
+}
+.head_container .right{
+  margin-top: 30px;
+}
+.head_container .right .right-content img{
+  width: 17px;
+  margin-left: 3px;
+}
+.head_container .right .right-content p {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  padding-top: 2px;
+  color: #512051;
+}
+.head_container{
+  display: flex;
+  justify-content: space-around;
+}
+/* end of head section */
+.review-section{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.review-section .review-cards{
+  margin-top: 80px 80px;
+  display: flex;
+}
+
+.review-section .review-cards .about{
+  display: flex;
+  margin: 30px;
+}
+.review-section .review-cards .card .details{
+  margin-left:20px;
+}
+.review-section .review-cards .card{
+  width: 350px;
+  height: 234px;
+  border-radius: 8px;
+  background-color: var(--purple);
+  color: #F7F2F7;
+  margin-right:30px;
+}
+
+.review-section .review-cards .card .name{
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;  
+  color: #FFFFFF;
+}
+
+.review-section .review-cards .card .info{
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 16px;
+  color: #EE69A4; 
+  margin-top:5px;
+}
+.review-section .review-cards .card .review{
+  margin: 30px;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.303571px;
+  color: #FFFFFF;
+}
+
+.review-section .review-cards .top{
+ transform: translateY(10px);
+}
+.gap{
+  transform: translateY(20px);
+}
+/* end of review section */
+footer{
+  margin-top: 50px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1000px){
+   
+  body{
+    background: url(./images/Path.svg),
+    url(./images/Path\ Copy\ 5.svg);
+    background-repeat: no-repeat;
+    background-position:   bottom right, top left ;
+    background-size:auto 400px , 400px;
+    margin-bottom: 900px;
+  }
+  section{
+    height: 90vh;
+  }
+  .head_container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .head_container .left{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+   }
+   .review-section .review-cards{
+    display: flex;
+    flex-direction: column;
+   }
+   .review-section .review-cards .top{
+    margin-top: 30px;
+    transform: translateX(10px);
+   }
+   .gap{
+    margin-top: 30px;
+     transform: translateX(20px);
+   }
+
+  }
+
+@media (max-width:600px){
+  body{
+    background: url(./images/Path.svg),
+    url(./images/Path\ Copy\ 5.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right,top left;
+    background-size:auto 300px , 400px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120vh;
+  }
+  .head_container .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .head_container .right .right-content{
+    width: 300px;
+    height: 78px;
+    margin: 16px 25px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+  }
+  .head_container .right .top{
+    position: relative;
+    right: 7%;
+  }
+   .right .right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .head_container .left{
+    text-align: center;
+    margin: 34px;
+   }
+   .review-section .review-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-right:10px;
+    margin-left:10px;
+   }
+   .review-section .review-cards .card {
+    transform: translateY(0%);
+    transform: translateX(0%);
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .review-section .review-cards{
+    width: 357px;
+    height: 248px;
+   }
+   .head_container .left .head_text{
+     margin-left: 64px;
+     width: 327px;
+     height: 100px;
+   }
+   footer{
+    margin-top: 300px;
+  }
+  }
